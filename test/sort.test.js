@@ -12,9 +12,9 @@ describe('Sort function', () => {
   it('array is sorted in ascending order', () => {
 
     // define inputs 
-    const actualArr = [14, 8, 2, 7, 1];
+    const actualArr = [14, 8, 20, 7, 1, 2, 12, 2];
     // expect
-    const expectedArr = [1, 2, 7, 8, 14];
+    const expectedArr = [1, 2, 2, 7, 8, 12, 14, 20];
 
     // invoke function (apparently not needed, or working)
     const fn = () => {
@@ -25,6 +25,8 @@ describe('Sort function', () => {
     // assert that expected === actual
     // expect(fn).to.deep.equal(expectedArr) 
     expect(sort(actualArr)).to.deep.equal(expectedArr)
+
+    // PROBLEM: says test passes if for(let i = 2;, but actualArr is not equal to expectedArr
 
   });
 
