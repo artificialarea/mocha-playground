@@ -41,12 +41,12 @@ describe('Divide function', () => {
 
 
 // condensed version
-describe('Divide function', () => {
-  it('should divide positive integers correctly', () => {
-    expect(divide(8, 4)).to.equal(2);
-  });
+// describe('Divide function', () => {
+//   it('should divide positive integers correctly', () => {
+//     expect(divide(8, 4)).to.equal(2);
+//   });
 
-  it('should throw an error when divide by zero', () => {
-    expect(() => { divide(8, 0) }).to.throw();
-  });
-});
+//   it('should throw an error when divide by zero', () => {
+//     expect(() => { divide(8, 0) }).to.throw();
+//   });
+// });
