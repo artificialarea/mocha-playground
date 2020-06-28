@@ -12,11 +12,12 @@ describe('Sort function', () => {
   it('array is sorted in ascending order', () => {
 
     // define inputs 
-    const actualArr = [14, 8, 20, 7, 1, 2, 12, 2];
+    const actualArr = [14, 8, 20, 7, 1, 2, 12, 3];
     // expect
-    const expectedArr = [1, 2, 2, 7, 8, 12, 14, 20];
+    const expectedArr = [1, 2, 3, 7, 8, 12, 14, 20];
 
-    // invoke function (apparently not needed, or working)
+    // invoke function 
+    // BUT apparently not needed (nor working)
     const fn = () => {
       sort(actualArr);
     }
@@ -26,7 +27,8 @@ describe('Sort function', () => {
     // expect(fn).to.deep.equal(expectedArr) 
     expect(sort(actualArr)).to.deep.equal(expectedArr)
 
-    // PROBLEM: says test passes if for(let i = 2;, but actualArr is not equal to expectedArr
+    // PROBLEM: says test passes if for(let i = 2;, 
+    // but actualArr !== expectedArr
 
   });
 
