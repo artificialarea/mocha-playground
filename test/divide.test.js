@@ -1,7 +1,7 @@
 const expect = require('chai').expect;
 const divide = require('../index');
 
-// expanded version
+
 describe('Divide function', () => {
 
   it('should divide positive integers correctly', () => {
@@ -37,16 +37,17 @@ describe('Divide function', () => {
     expect(fn).to.throw();
 
   });
+
 });
 
 
-// condensed version
-// describe('Divide function', () => {
-//   it('should divide positive integers correctly', () => {
-//     expect(divide(8, 4)).to.equal(2);
-//   });
+// CONDENSED VERSION
+describe('Divide function (condensed version)', () => {
+  it('should divide positive integers correctly', () => {
+    expect(divide(8, 4)).to.equal(2);
+  });
 
-//   it('should throw an error when divide by zero', () => {
-//     expect(() => { divide(8, 0) }).to.throw();
-//   });
-// });
+  it('should throw an error when divide by zero', () => {
+    expect(() => { divide(8, 0) }).to.throw();
+  });
+});
